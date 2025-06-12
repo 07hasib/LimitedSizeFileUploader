@@ -1,0 +1,21 @@
+<template>
+    <lightning-card  title="Custom Size File Uploader">
+    <div class="slds-form-element" align="center">
+        <lightning-file-upload
+            variant="label-hidden"
+            name="fileUploader"
+            accept={acceptedFormats}
+            record-id={myRecordId}
+            onuploadfinished={handleUploadFinished}
+            multiple
+        >
+        </lightning-file-upload>
+        
+        <template if:true={showError}>
+            <div class="slds-form-element__help slds-text-color_error m-top">
+                <span>{errorMessage}</span>
+            </div>
+        </template>
+    </div>
+    </lightning-card>
+</template>
