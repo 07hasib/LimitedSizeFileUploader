@@ -1,8 +1,8 @@
 <template>
-    <lightning-card  title="Custom Size File Uploader">
-    <div class="slds-form-element" align="center">
+    <lightning-card  title="Custom Size File Uploader" variant="Narrow"  icon-name="standard:document">
+    <div class="slds-form-element slds-p-vertical_medium" align="center">
         <lightning-file-upload
-            variant="label-hidden"
+            label="Files"
             name="fileUploader"
             accept={acceptedFormats}
             record-id={myRecordId}
